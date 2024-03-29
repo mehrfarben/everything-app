@@ -10,8 +10,8 @@ const Home = () => {
         <Link to='/Photos'>
           <button className='app2 app'>Photos</button>
         </Link>
-        <Link to='/App3'>
-          <button className='app3 app'>App3</button>
+        <Link to='/IdeaGenerator'>
+          <button className='app3 app'>Idea Generator</button>
         </Link>
       </div>
       <Outlet />

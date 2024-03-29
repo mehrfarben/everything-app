@@ -186,3 +186,40 @@ body,
   opacity: 12%;
   background: white;
 }
+
+.idea-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.idea-title {
+  color: #d3d0cb;
+}
+
+.idea-app {
+  display: flex;
+  flex-direction: column;
+  background-color: #d3d0cb;
+  padding: 2rem;
+  border-radius: 10px;
+  height: 170px;
+  width: 400px;
+}
+
+.idea-btn {
+  margin-top: 7px;
+  float: bottom;
+  border: none;
+  font-size: large;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.idea-btn:hover {
+  cursor: pointer;
+  transform: scalex(101%);
+}
+
+.idea-btn:active {
+  transform: scaleX(100%);
+}
