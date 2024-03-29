@@ -4,6 +4,7 @@
 
 body {
   background-color: #393e41;
+  user-select: none;
 }
 
 html,
@@ -131,7 +132,6 @@ body,
 }
 
 .footer {
-  cursor: default;
   font-size: small;
   color: #bbb;
   position: absolute;
@@ -162,7 +162,6 @@ body,
   height: 2000px;
   margin-top: 150px;
   margin-left: -100px;
-
   border-radius: 43%;
 }
 
@@ -218,8 +217,35 @@ body,
 .idea-btn:hover {
   cursor: pointer;
   transform: scalex(101%);
+  background-color: #a19b91;
+  color: #fff;
 }
 
 .idea-btn:active {
   transform: scaleX(100%);
+}
+
+@media only screen and (max-width: 600px) {
+  .app-body {
+    flex-direction: column;
+  }
+  .app {
+    width: 70vw;
+    height: 20vh;
+    margin: 1rem;
+  }
+  .wave {
+    display: none;
+  }
+  .app-image {
+  }
+  .idea-page {
+    transform: scale(70%);
+  }
+  .logo {
+    font-size: large;
+  }
+  .navbuttons {
+    transform: scale(50%);
+  }
 }
