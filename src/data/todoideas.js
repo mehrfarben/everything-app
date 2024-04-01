@@ -55,6 +55,30 @@ const todoideas = {
     idea: "Watch the sunset",
     price: "Free",
   },
+  idea15: {
+    idea: "Eat something you've never eaten before",
+    price: "$$",
+  },
+  idea16: {
+    idea: "Go for a walk",
+    price: "Free",
+  },
+  idea17: {
+    idea: "Solve puzzles together",
+    price: "Free",
+  },
+  idea18: {
+    idea: "Make a random craft",
+    price: "Free or $",
+  },
+  idea19: {
+    idea: "Go ice skating",
+    price: "Free",
+  },
+  idea20: {
+    idea: "Do couple yoga",
+    price: "Free",
+  },
 }
 
 export default todoideas

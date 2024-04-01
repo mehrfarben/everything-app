@@ -120,7 +120,7 @@ body,
 .app:hover {
   cursor: pointer;
   transform: scale(120%);
-  transition: 200ms ease-in-out;
+  transition: 150ms ease-in-out;
 }
 
 .app:active {
