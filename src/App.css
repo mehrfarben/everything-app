@@ -29,6 +29,26 @@ body,
   color: #d3d0cb;
   font-weight: 700;
   font-size: 3rem;
+  background: linear-gradient(to right, #068d9d, #fff, #068d9d);
+  background-size: 200% 200%;
+  animation: rainbow 2s ease-in-out infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: color 0.2s ease-in-out;
+}
+.logo:hover {
+  color: rgba(0, 0, 0, 0);
+}
+@keyframes rainbow {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
 }
 
 .navbtn {
@@ -113,19 +133,19 @@ body,
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  user-select: text;
   background: #d3d0cb;
   position: fixed;
-  width: 40vw;
+  width: 50vw;
   height: 60vh;
-  bottom: 10%;
-  left: 30%;
+  bottom: 20%;
   opacity: 0;
   border-radius: 20px;
   animation: smooth-appear 500ms ease forwards;
 }
 
 .contact-text {
-  font-size: larger;
+  font-size: 1.5vw;
   margin-top: 2rem;
 }
 
@@ -133,7 +153,6 @@ body,
   display: flex;
   flex-direction: column;
 }
-
 .footer {
   font-size: small;
   color: #555;
@@ -196,7 +215,7 @@ body,
   transform: scaleX(100%);
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
   .app-body {
     flex-direction: column;
   }
@@ -205,6 +224,19 @@ body,
     height: 20vh;
     margin: 1rem;
   }
+
+  .contact-card {
+    flex-direction: column;
+  }
+
+  .ben-foto {
+    width: 30vw;
+  }
+
+  .contact-text {
+    margin-top: 5px;
+  }
+
   .idea-app {
     width: 65vw;
     font-size: 20px;
@@ -228,5 +260,28 @@ body,
 @media only screen and (max-width: 800px) {
   .navbtn {
     margin-right: 0.6rem;
+  }
+
+  .ben-foto {
+    width: 40vw;
+  }
+
+  .contact-text {
+    font-size: 2vw;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .ben-foto {
+    width: 45vw;
+  }
+
+  .contact-card {
+    width: 80vw;
+    height: 50vh;
+  }
+
+  .contact-text {
+    font-size: 2.9vw;
   }
 }

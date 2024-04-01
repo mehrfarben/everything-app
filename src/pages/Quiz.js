@@ -73,15 +73,12 @@ const Quiz = () => {
         <div className='result'>
           <h3>Result</h3>
           <p>
-            Total Question: <span>{questions.length}</span>
-          </p>
-          <p>
             Total Score:<span> {result.score}</span>
           </p>
-          <p>
+          <p className='correct-answers'>
             Correct Answers:<span> {result.correctAnswers}</span>
           </p>
-          <p>
+          <p className='wrong-answers'>
             Wrong Answers:<span> {result.wrongAnswers}</span>
           </p>
           <img className='yippie' src='https://64.media.tumblr.com/fbf092e04ccb71c0f948c2dd7979887b/837d14abd9f23919-07/s1280x1920/9047c061c6aa17449dc036744bd85b9d846002d2.gifv' alt='yippie' />

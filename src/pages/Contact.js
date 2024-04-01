@@ -5,7 +5,7 @@ const Contact = () => {
     <>
       <div className='contact-card'>
         <div>
-          <img src={BenFoto} alt='Alim Karaca' width='300' />
+          <img className='ben-foto' src={BenFoto} alt='Alim Karaca' width='300' />
         </div>
         <div className='contact-text-card'>
           <span className='contact-text'>Alim Karaca</span>

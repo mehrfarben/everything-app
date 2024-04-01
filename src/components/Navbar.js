@@ -5,7 +5,7 @@ const Navbar = () => {
     <>
       <div className='navbar'>
         <Link to='/' style={{ textDecoration: "none" }}>
-          <span className='logo'>THE App</span>
+          <span className='logo'>THE APP</span>
         </Link>
         <span className='navbuttons'>
           <Link to='/'>

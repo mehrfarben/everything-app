@@ -91,3 +91,11 @@
   width: 100%;
   height: 150px;
 }
+
+.correct-answers {
+  color: green;
+}
+
+.wrong-answers {
+  color: crimson;
+}
