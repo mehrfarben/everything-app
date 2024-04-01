@@ -5,6 +5,9 @@
 body {
   background-color: #393e41;
   user-select: none;
+  background-image: url(./assets/wave.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 html,
@@ -133,7 +136,7 @@ body,
 
 .footer {
   font-size: small;
-  color: #bbb;
+  color: #555;
   position: absolute;
   bottom: 5px;
   left: 50%;
@@ -147,45 +150,6 @@ body,
   }
 }
 
-.box {
-  position: fixed;
-  top: 0;
-  transform: rotate(90deg);
-  left: 0;
-}
-
-.wave {
-  z-index: -2;
-  position: absolute;
-  opacity: 0.4;
-  width: 2200px;
-  height: 2000px;
-  margin-top: 150px;
-  margin-left: -100px;
-  border-radius: 43%;
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(110deg);
-  }
-  from {
-    transform: rotate(180deg);
-  }
-}
-
-.wave.-one {
-  animation: rotate 30s infinite linear;
-  opacity: 5%;
-  background: white;
-}
-
-.wave.-two {
-  animation: rotate 20s infinite linear;
-  opacity: 12%;
-  background: white;
-}
-
 .idea-page {
   display: flex;
   flex-direction: column;
@@ -196,13 +160,20 @@ body,
 }
 
 .idea-app {
+  position: relative;
+  font-size: 25px;
   display: flex;
   flex-direction: column;
   background-color: #d3d0cb;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 10px;
-  height: 170px;
-  width: 400px;
+  height: 25vh;
+  width: 30vw;
+}
+
+.idea-price {
+  position: absolute;
+  bottom: 0;
 }
 
 .idea-btn {
@@ -225,7 +196,7 @@ body,
   transform: scaleX(100%);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   .app-body {
     flex-direction: column;
   }
@@ -234,18 +205,28 @@ body,
     height: 20vh;
     margin: 1rem;
   }
-  .wave {
-    display: none;
-  }
-  .app-image {
-  }
-  .idea-page {
-    transform: scale(70%);
+  .idea-app {
+    width: 65vw;
+    font-size: 20px;
   }
   .logo {
-    font-size: large;
+    font-size: 35px;
   }
   .navbuttons {
-    transform: scale(50%);
+    transform: scale(75%);
+    margin-right: 0;
+    top: 10%;
+  }
+  .navbtn {
+    width: 100px;
+  }
+  .app-images {
+    transform: translate(-20%);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .navbtn {
+    margin-right: 0.6rem;
   }
 }

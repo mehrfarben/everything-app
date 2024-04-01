@@ -24,7 +24,7 @@ const todoideas = {
     price: "$",
   },
   idea7: {
-    idea: "Play a board or card game",
+    idea: "Play a board / card game",
     price: "Free",
   },
   idea8: {

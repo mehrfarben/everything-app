@@ -25,8 +25,6 @@ function App() {
         </Routes>
       </div>
       <Footer />
-      <span className='wave -two'></span>
-      <span className='wave -one'> </span>
     </div>
   )
 }
