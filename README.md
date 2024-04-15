@@ -1,6 +1,6 @@
 # Everything App
 
-You can view the live website [here](https://the-app-rouge.vercel.app/)
+You can view the live website [here](https://the-everything.vercel.app/)
 
 ## What is it ?
 
